@@ -28,7 +28,7 @@ public class RmzController {
 	/*
 	 * @Autowired private BCryptPasswordEncoder Passwordenc;
 	 */
-	@Autowired(required = true)
+	@Autowired(required = true)  
 	private EduDao dao;
 	
 	@RequestMapping("/welcome")
