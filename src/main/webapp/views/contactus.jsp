@@ -114,7 +114,9 @@
 	    		  url: "enquiry",
 	    		  data:data,
 	    		  success: function( result ) {
-	    			  alert("under save method");
+	    			 if(result==="sucess"){
+	    				 
+	    			 }
 	    		  }
 	    		});
 	        
