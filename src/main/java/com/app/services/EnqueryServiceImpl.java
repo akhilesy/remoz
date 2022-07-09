@@ -2,16 +2,20 @@ package com.app.services;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.app.model.Enquery;
 import com.app.repository.EnqueryRepo;
+import com.app.repository.UserRepo;
 import com.app.vo.UserVo;
 
 @Service
 public class EnqueryServiceImpl  implements EnqueryService{
 
 	private EnqueryRepo enqueryrepo;
+	@Autowired
+	private UserRepo userrepo;
 	
 	
 	public  EnqueryServiceImpl(EnqueryRepo enqueryrepo) {
@@ -35,6 +39,8 @@ public class EnqueryServiceImpl  implements EnqueryService{
 
 	@Override
 	public List<Enquery> getAllEnquery() {
+		System.out.println(userrepo.toString());
+		System.out.println(enqueryrepo.toString());
 		return enqueryrepo.findAll();
 	}
 

@@ -32,6 +32,10 @@
 	<%@include file="menu.jsp"%>
 	<!--end nav bar -->
 
+<%@include file="banner.jsp"%>
+
+
+
 	<!--banner start-->
 	<header class="header1">
 		<div class="container h-100">
@@ -58,25 +62,7 @@
 	<!--banner end-->
 	
 	
-	<div class="card hidden" id="enquery" style="width: 18rem;">
-  <div class="card-body">
- <form:form>
-     
-     <div class="row">
-         <div class="col-4">
-         <input name="firstName" />
-         </div>
-            <div class="col-4">
-         <input name="lastname" />
-         </div>
-     
-     </div>
-     
-     
-  </form:form>
  
- 	 </div>
- </div> 
 	
 
 	<!--message section start-->

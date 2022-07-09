@@ -88,9 +88,15 @@ public class RmzController {
 	  }
 	
 	@RequestMapping(value="/getenquert" , method = RequestMethod.GET)
+	//@GetMapping("/getenq")
 	public List<Enquery> getAllEnquery() {
 		return enqueryservice.getAllEnquery();
 		
 	}
 
+	
+	
+	
+	
+	
 }
